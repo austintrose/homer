@@ -1,0 +1,193 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+
+title: "DNSWatch"
+subtitle: "Links"
+logo: "favicon.ico"
+icon: "internet-explorer"
+header: false
+footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+theme: default
+columns: "4"
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link-hover: "#ffdd57"
+
+
+# Optional custom stylesheet
+# Will load custom CSS files. Especially useful for custom icon sets.
+stylesheet:
+  - "assets/custom.css"
+# message:
+#   style: "is-dark"
+#   title: "Pro Tip － Set this as the \"new tab\" page for your browser."
+#   content: ""
+
+# Optional navbar
+links:
+  - name: "DNSWatch Explorer"
+    icon: "fab fa-internet-explorer"
+    url: "#"
+
+# Services
+services:
+  - name: "PagerDuty"
+    items:
+      - name: "Incidents"
+        logo: "assets/tools/pagerduty.png"
+        # subtitle: "percipient.pagerduty.com/incidents"
+        url: "https://percipient.pagerduty.com/incidents"
+        target: "_blank"
+      - name: "Escalation Policy"
+        logo: "assets/tools/pagerduty.png"
+        # subtitle: "percipient.pagerduty.com/escalation_policies"
+        url: "https://percipient.pagerduty.com/escalation_policies"
+        target: "_blank"
+  - name: "Sentry"
+    items:
+      - name: "Production Issues"
+        logo: "assets/tools/sentry.png"
+        # subtitle: "sentry.io/organizations/dnswatch/issues"
+        url: "https://sentry.io/organizations/dnswatch/issues"
+        target: "_blank"
+      - name: "All Events"
+        logo: "assets/tools/sentry.png"
+        # subtitle: "sentry.io/organizations/dnswatch/discover/results"
+        url: "https://sentry.io/organizations/dnswatch/discover/results"
+        target: "_blank"
+  - name: "PaperTrail"
+    items:
+      - name: "Dashboard"
+        logo: "assets/tools/papertrail.png"
+        # subtitle: "papertrailapp.com/dashboard"
+        url: "https://papertrailapp.com/dashboard"
+        target: "_blank"
+      - name: "All Events"
+        logo: "assets/tools/papertrail.png"
+        # subtitle: "my.papertrailapp.com/events"
+        url: "https://my.papertrailapp.com/events"
+        target: "_blank"
+  - name: "DataDog"
+    items:
+      - name: "Dashboards"
+        # subtitle: "app.datadoghq.com/dashboard/lists"
+        url: "//app.datadoghq.com/dashboard/lists"
+        logo: "assets/tools/datadog.png"
+        target: "_blank"
+      - name: "Host Map"
+        # subtitle: "app.datadoghq.com/infrastructure/map"
+        url: "//app.datadoghq.com/infrastructure/map"
+        logo: "assets/tools/datadog.png"
+        target: "_blank"
+      - name: "Notebooks"
+        # subtitle: "app.datadoghq.com/notebook/list"
+        url: "//app.datadoghq.com/notebook/list"
+        logo: "assets/tools/datadog.png"
+        target: "_blank"
+  - name: "CloudAMQP"
+    items:
+      - name: "RabbitMQ Management"
+        # subtitle: "customer.cloudamqp.com/instance/23645/sso?goto=details/mgmt"
+        url: "//customer.cloudamqp.com/instance/23645/sso?goto=details/mgmt"
+        logo: "assets/tools/rabbitmq.png"
+        target: "_blank"
+      - name: "Cloud Dashboard"
+        # subtitle: "customer.cloudamqp.com/instance"
+        url: "//customer.cloudamqp.com/instance"
+        logo: "assets/tools/rabbitmq.png"
+        target: "_blank"
+  - name: "Github"
+    items:
+      - name: "Repo"
+        # subtitle: "github.com/percipient/strongarm"
+        url: "//github.com/percipient/strongarm"
+        logo: "assets/tools/github.png"
+        target: "_blank"
+  - name: "CircleCI"
+    items:
+      - name: "Builds"
+        # subtitle: "app.circleci.com/pipelines/github/percipient"
+        url: "//app.circleci.com/pipelines/github/percipient"
+        logo: "assets/tools/circle.png"
+        target: "_blank"
+  - name: "AWS"
+    items:
+      - name: "EC2"
+        # subtitle: "us-west-1.console.aws.amazon.com/ec2"
+        url: "//us-west-1.console.aws.amazon.com/ec2"
+        logo: "assets/tools/ec2.png"
+        target: "_blank"
+  - name: "StatusPage"
+    items:
+      - name: "Incidents"
+        # subtitle: "manage.statuspage.io"
+        url: "//manage.statuspage.io"
+        logo: "assets/tools/statuspage.png"
+        target: "_blank"
+      - name: "Public"
+        # subtitle: "status.dnswatch.watchguard.com"
+        url: "//status.dnswatch.watchguard.com"
+        logo: "assets/tools/statuspage.png"
+        target: "_blank"
+  - name: "Pingdom"
+    items:
+      - name: "Dashboard"
+        # subtitle: "my.pingdom.com/app"
+        url: "//my.pingdom.com/app"
+        logo: "assets/tools/pingdom.png"
+        target: "_blank"
+  - name: "Mongo"
+    items:
+      - name: "Clusters"
+        # subtitle: "cloud.mongodb.com/v2"
+        url: "//cloud.mongodb.com/v2"
+        logo: "assets/tools/mongo.png"
+        target: "_blank"
+  - name: "Groove"
+    items:
+      - name: "Inbox"
+        # subtitle: "strongarm.groovehq.com"
+        url: "//strongarm.groovehq.com"
+        logo: "assets/tools/groove.png"
+        target: "_blank"
+  - name: "Travis"
+    items:
+      - name: "Builds"
+        # subtitle: "travis-ci.com/github/percipient/strongarm"
+        url: "//travis-ci.com/github/percipient/strongarm"
+        logo: "assets/tools/travis.png"
+        target: "_blank"
+  - name: "Slack"
+    items:
+      - name: "Channel Home"
+        # subtitle: "percipientnetworks.slack.com"
+        url: "//percipientnetworks.slack.com"
+        logo: "assets/tools/slack.png"
+        target: "_blank"
+
+# Authpoint
+#   Jira
+#   Confluence
